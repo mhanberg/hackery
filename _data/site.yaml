@@ -1,0 +1,19 @@
+name: "Hackery"
+nav:
+  - text: "Posts"
+    url: "/posts"
+  - text: "RSS"
+    url: "/feed"
+
+socials:
+  - name: Twitter
+    handle: "@hackery"
+    url: https://twitter.com/hackery
+
+  - name: GitHub
+    handle: "@hackery"
+    url: https://github.com/hackery
+
+  - name: Email
+    handle: "hackery@hackery.com"
+    url: mailto:hackery@hackery.com

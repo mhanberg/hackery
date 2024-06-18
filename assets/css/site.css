@@ -1,0 +1,17 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+pre {
+  @apply p-2 rounded border border-black overflow-x-auto;
+}
+
+@media (prefers-color-scheme: dark) {
+  pre {
+    @apply p-2 rounded border border-white !text-white overflow-x-auto;
+  }
+}
+
+pre.autumn-hl code {
+  @apply text-sm;
+}
