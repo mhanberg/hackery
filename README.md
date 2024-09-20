@@ -2,6 +2,8 @@
 
 Hackery is a blog and website template using the [Tableau](https://github.com/elixir-tools/tableau) static site generator.
 
+![hackery-variants](https://github.com/user-attachments/assets/82a036b1-df7f-4d92-a7a7-01f360753413)
+
 ## Features
 
 - Configurable navbar items, name, and footer links
