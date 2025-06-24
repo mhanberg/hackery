@@ -1,5 +1,8 @@
 defmodule Hackery.PostsPage do
-  use Tableau.Page, layout: Hackery.RootLayout, permalink: "/posts"
+  use Tableau.Page,
+    layout: Hackery.RootLayout,
+    permalink: "/posts"
+
   use Phoenix.Component
 
   def template(assigns) do

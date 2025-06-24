@@ -29,8 +29,9 @@ defmodule Hackery.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:tableau, "~> 0.15"},
-      {:tailwind, "~> 0.2", runtime: Mix.env() == :dev},
+      # {:tableau, "~> 0.25"},
+      {:tableau, path: "../tableau/"},
+      {:tailwind, "~> 0.3", runtime: Mix.env() == :dev},
       {:phoenix_live_view, "~> 0.20"}
     ]
   end

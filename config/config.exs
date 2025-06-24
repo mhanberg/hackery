@@ -13,10 +13,9 @@ config :web_dev_utils, :reload_log, true
 # config :web_dev_utils, :reload_url, "'wss://' + location.host + '/ws'"
 
 config :tailwind,
-  version: "3.3.5",
+  version: "4.1.0",
   default: [
     args: ~w(
-    --config=assets/tailwind.config.js
     --input=assets/css/site.css
     --output=_site/css/site.css
     )
@@ -28,14 +27,22 @@ config :tableau, :config,
   url: "http://localhost:4999",
   markdown: [
     mdex: [
-      extension: [table: true, header_ids: "", tasklist: true, strikethrough: true],
-      render: [unsafe_: true],
-      features: [syntax_highlight_theme: "tokyonight"]
+      extension: [
+        table: true,
+        header_ids: "",
+        tasklist: true,
+        strikethrough: true,
+        autolink: true,
+        alerts: true,
+        footnotes: true
+      ],
+      render: [unsafe: true],
+      syntax_highlight: [formatter: {:html_inline, theme: "neovim_dark"}]
     ]
   ]
 
 config :tableau, Tableau.PageExtension, enabled: true
-config :tableau, Tableau.PostExtension, enabled: true, future: true
+config :tableau, Tableau.PostExtension, enabled: true
 config :tableau, Tableau.DataExtension, enabled: true
 config :tableau, Tableau.SitemapExtension, enabled: true
 

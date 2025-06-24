@@ -1,6 +1,30 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+@import 'tailwindcss';
+
+@plugin '@tailwindcss/typography';
+
+@source './site.css';
+
+@theme {
+  --color-theme-50: var(--color-green-50);
+  --color-theme-100: var(--color-green-100);
+  --color-theme-200: var(--color-green-200);
+  --color-theme-300: var(--color-green-300);
+  --color-theme-400: var(--color-green-400);
+  --color-theme-500: var(--color-green-500);
+  --color-theme-600: var(--color-green-600);
+  --color-theme-700: var(--color-green-700);
+  --color-theme-800: var(--color-green-800);
+  --color-theme-900: var(--color-green-900);
+  --color-theme-950: var(--color-green-950);
+  --tw-prose-links: var(--color-theme-600);
+  --tw-prose-invert-links: var(--color-theme-500);
+}
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
 
 pre {
   @apply p-2 rounded border border-black overflow-x-auto;
@@ -12,6 +36,6 @@ pre {
   }
 }
 
-pre.autumn-hl code {
+pre.athl code {
   @apply text-sm;
 }
